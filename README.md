@@ -7,6 +7,21 @@ multilingual BERT is slightly behind the monolingual BERT-based on Russian data,
 variant on Chinese. We also show that training jointly on English data and additional 10,000 monolingual samples allows it to reach the performance 
 comparable to the one trained on monolingual data only.
 
+### Using
+
+The repository contains:
+
+* `ch-bert-base-chinese.json` -- DeepPavlov configuration file for the Chinese language squad based on DRCD.
+* `en-bert-base-cased.json` -- DeepPavlov configuration file for the English language squad.
+* `ru-DeepPavlov-rubert-base-cased.json` -- DeepPavlov configuration file for the Russian language squad SberQuAD.
+
+
+To execute the model install DeepPavlov by running:
+`pip install deeppavlov`
+
+To run inference execute:
+`python -m deeppavlov evaluate {config_name}`
+
 
 ### Contact
 For any question, please contact vaskoncv@gmail.com
